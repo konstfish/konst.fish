@@ -1,0 +1,120 @@
+:root {
+  --main-txt-color: #f5f6fa;
+  --scnd-txt-color: #bdbdc1;
+  --main-bg-color: #222;
+  --main-tile-color: #353b48;
+
+  --tile-prp-color: #8c7ae6;
+  --tile-blu-color: #0097e6;
+  --tile-lblu-color: #40739e;
+  --tile-grn-color: #44bd32;
+  --tile-ylw-color: #fbc531;
+  --tile-red-color: #c23616;
+  --tile-org-color: #e84118;
+}
+
+html{
+  overflow:hidden;
+}
+
+body{
+  margin:0px;
+  background-color: var(--main-bg-color);
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+canvas{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+
+  margin-left:-40px;
+}
+
+#container {
+  width:100%;
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
+}
+
+@media (prefers-color-scheme: light) {
+  body{
+    background-color: var(--main-txt-color);
+  }
+
+  #container {
+    color: var(--main-txt-color);
+  }
+
+  h1{
+    color: var(--main-bg-color);
+    background-color: var(--main-txt-color);
+  }
+}
+
+.fish h1 {
+  font-family: 'Kosugi Maru', sans-serif;
+  color: var(--main-txt-color);;
+  text-align: center;
+  margin: 0 0 0 0;
+  padding-top: 200px;
+}
+
+.card h3{
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.cardcont {
+  width: 240px;
+  position: absolute;
+  margin-top: 175px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.cardcont p {
+  margin: 0 0 0 0;
+
+  color: var(--main-txt-color);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 26px;
+  text-align: center;
+}
+
+#pspacerlol{
+  margin-top: 10px;
+}
+
+span {
+  padding-right: 5px;
+}
+
+.cardcont a{
+  color: var(--main-txt-color);
+  font-size: 24px;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.cardcont a:hover{
+    color: var(--scnd-txt-color);
+    transition: 1s;
+}
+
+.cardcont img {
+  display:block;
+  margin:auto;
+
+  width: 180px;
+
+  border: 2px solid var(--main-txt-color);
+  border-radius: 50%;
+  opacity: 0.95;
+}

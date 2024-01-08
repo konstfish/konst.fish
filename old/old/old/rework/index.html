@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>konst.fish</title>
+
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="src/css/main.css">
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+
+  <script src="src/js/scroll_determine.js"></script>
+  <script src="src/js/jquery.scrollify.js"></script>
+
+  <script>
+        $(function() {
+          $.scrollify({
+            section : ".post",
+          });
+        });
+  </script>
+
+</head>
+<body>
+  <div class="holder">
+    <div class="main">
+      <div style='height:150px;' class='post' id="post1">
+        <p class="description" style="display: none;">one</p>
+        <div class="posttop"></div>
+        <div class="postlink">
+          <a href="https://konst.fish">konst.fish</a> &rsaquo; This website
+        </div>
+      </div>
+      <div style='height:150px;' class='post'>
+        <p class="description" style="display: none;">two</p>
+        <div class="posttop"></div>
+        <div class="postlink">
+          <a href="http://break.co.at">break.co.at</a> &rsaquo; My Robotics Team
+        </div>
+      </div>
+      <div style='height:150px;' class='post'>
+        <p class="description" style="display: none;">three</p>
+        <div class="posttop"></div>
+        <div class="postlink">
+          <a href="https://konst.fish/bot">fISHbot</a> &rsaquo; A Simple Discord bot
+        </div>
+      </div>
+      <div style='height:150px;' class='post'>
+        <p class="description" style="display: none;">four</p>
+        <div class="posttop"></div>
+        <div class="postlink">
+          <a href="https://cloud.konst.fish">Nextcloud</a> &rsaquo; My Nextcloud
+        </div>
+      </div>
+      <div id="showScroll"></div>
+      <div id="datedata"></div>
+      <a href="https://konst.fish" class="link"><div id='date' class="foo"></div></a>
+      <div class="footer">&#9400; David Fischer 2018</div>
+      <div id='arr'>&rarr;</div>
+    </div>
+  </div>
+</body>
+
+</html>

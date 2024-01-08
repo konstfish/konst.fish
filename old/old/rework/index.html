@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>David Fischer</title>
+  <meta name="description" content="konst.fish homepage">
+  <meta name="author" content="David Fischer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="src/css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <div class="loader"></div>
+
+  <div id="particles-js">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/sig.png" alt="fISHlogo" style="width:200px;">
+          </div>
+          <div class="flip-card-back">
+            <img src="https://avatars1.githubusercontent.com/u/33621804?s=460&v=4" alt="">
+            <h1>David Fischer</h1>
+            <p>kleiner pp</p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <script src="src/js/particles.min.js"></script>
+
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('particles.js loaded - callback');
+    });
+  </script>
+
+  <script>
+  setTimeout(
+    function()
+      {
+        $(".loader").css({"right":"0%"}).animate({"right":"100%"}, "slow");
+      }, 10);
+  </script>
+
+</body>
+</html>

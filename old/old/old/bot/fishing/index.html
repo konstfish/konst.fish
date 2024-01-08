@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fishing Game</title>
+
+  <link rel="stylesheet" href="src/css/main.css">
+
+  <script type="text/javascript" src="src/js/yaml.js"></script>
+</head>
+<body>
+
+  <div class="data">
+    <div class="general-data">
+      <div class="item">Name: <em id="name"></em></div>
+      <div class="item">Level: <em id="level"></em></div>
+      <div class="item">Current Progress: <em id="progress"></em></div>
+    </div>
+
+    <div class="fishing-data">
+      <div class="item">Total Catches: <span id="totalc"></span></div>
+
+      <div class="item">Common Catches: <span id="commonc"></span></div>
+      <div class="item">Rare Catches: <span id="rarec"></span></div>
+      <div class="item">Epic Catches: <span id="epicc"></span></div>
+      <div class="item">Legendary Catches: <span id="legendc"></span></div>
+    </div>
+
+    <div class="item-data">
+      <div class="item">Bait: <span id="baitc"></span></div>
+      <div class="item">Rod Level: <span id="rod_lvl"></span></div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var id = url.searchParams.get("id");
+    console.log(id);
+
+    YAML.load('fishing/' + id + '.yml', function(result)
+    {
+
+      nativeObject = result;
+      document.title = nativeObject['user']['name'] + "'s Profile";
+
+      document.getElementById("name").innerHTML = nativeObject['user']['name'];
+      document.getElementById("level").innerHTML = nativeObject['user']['level'];
+      document.getElementById("progress").innerHTML = nativeObject['user']['lvl_progress'];
+
+      document.getElementById("totalc").innerHTML = nativeObject['catches']['total_catch'];
+      //document.getElementById("commonc").innerHTML = parseFloat(nativeObject['catches']['catch_common']);
+      document.getElementById("rarec").innerHTML = nativeObject['catches']['catch_rare'];
+      document.getElementById("epicc").innerHTML = nativeObject['catches']['catch_epic'];
+      document.getElementById("legendc").innerHTML = nativeObject['catches']['catch_legendary'];
+
+      document.getElementById("baitc").innerHTML = nativeObject['items']['bait'];
+      document.getElementById("rod_lvl").innerHTML = nativeObject['items']['rod_lvl'];
+    });
+
+  </script>
+</body>
+</html>

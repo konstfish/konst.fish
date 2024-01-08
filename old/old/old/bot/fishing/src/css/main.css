@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:350,350italic,700,700italic);
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Arimo', sans-serif;
+  user-select: none;
+  background-image: url("../../img/bg.gif");
+  background-size: cover;
+
+}
+
+.data {
+  color: white;
+}
+
+.data {
+  background-color: rgba(10, 0, 0, 0.5);
+}

@@ -1,0 +1,12 @@
+catches:
+  total_catch: 100
+  catch_common: 0
+  catch_rare: 84
+  catch_epic: 15
+  catch_legendary: 1
+items:
+  rod_lvl: 3
+  bait: 10
+user:
+  level: 0
+  lvl_prog: 0

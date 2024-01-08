@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
+
+@keyframes animatedBackground {
+  0%  { background-position: 0% 0; }
+  100% { background-position: 10000000000% 0; }
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden
+}
+
+#flinks a, a:link, a:visited {
+    transition: 1s;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    /*margin: .3em .5em;*/
+    color: #e6e6e6;
+    text-decoration:none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+#flinks a:hover {
+    color: #939393;
+    transition: 1s;
+}
+
+#particles-js {
+  background-image: url("../../img/bg.png");
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  /*background-size: cover; background-size: 200%;*/
+	animation: animatedBackground 2500000000s linear infinite;
+  image-rendering: -webkit-optimize-contrast;
+
+}
+
+#overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+#impress {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 1.9em;
+    font-weight: bold;
+    margin: .3em .5em;
+    color: #e6e6e6;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+
+#foothp {
+  display: none;
+}
+
+/* sidebar */

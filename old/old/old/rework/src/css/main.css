@@ -1,0 +1,138 @@
+/*   MAIN CSS    */
+
+:root {
+  --main-txt-color: #f5f6fa;
+  --main-bg-color: #2f3640;
+  --main-tile-color: #353b48;
+
+  --tile-prp-color: #8c7ae6;
+  --tile-lblu-color: #40739e;
+  --tile-blu-color: #0097e6;
+  --tile-grn-color: #44bd32;
+  --tile-ylw-color: #fbc531;
+  --title-org-color: #e84118;
+  --tile-red-color: #c23616;
+}
+
+body {
+  color: var(--main-txt-color);
+  margin: 0px;
+  padding: 25px;
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 14px;
+  background-image: url("/old/old/rework/img/bg.png")
+}
+
+a {
+  color: var(--main-txt-color);
+  text-decoration: underline dotted var(--main-txt-color);
+}
+
+.holder {
+  width: 100%;
+}
+
+.main {
+  margin-left: 0px;
+  width: 100%;
+  font-family: helvetica, arial;
+  float: left;
+}
+
+.info {
+  width: 180px;
+  font-family: helvetica, arial;
+  float: left;
+  margin-left: 885px;
+  position: fixed;
+}
+
+.post {
+  margin-left: 250px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.posttop {
+  height:50px;
+}
+
+#arr {
+  position: fixed;
+  top: 50px;
+  left: 250px;
+  width: 20px;
+  height: 3px;
+  color: var(--main-txt-color);
+}
+
+@media only screen and (max-width: 1000px) {
+  .post {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+  }
+
+  .posttop {
+    height: 320px;
+  }
+
+  #arr {
+    position: fixed;
+    top: 320px;
+    left: 50px;
+    width: 20px;
+    height: 3px;
+    color: var(--main-txt-color);
+  }
+}
+
+.postlink {
+  border-left: 1px solid var(--main-txt-color);
+  padding-left: 10px;
+  height: 150px;
+}
+
+p.content {
+}
+
+#date {
+  position: fixed;
+  top: 30px;
+  left: 500px;
+
+  height: 275px;
+  width: 500px;
+  background-image: url('/old/old/rework/img/card/fish.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 20px;
+  color: var(--main-txt-color);
+}
+
+@media only screen and (max-width: 1000px) {
+  #date {
+    position: fixed;
+    right: unset;
+    left: unset;
+    display: table;
+    margin: 0 auto;
+    height: 275px;
+    width: 93%;
+    border-radius: 20px;
+    color: var(--main-txt-color);
+  }
+}
+
+.description {
+  visibility: hidden;
+  text-indent: -9999px;
+}
+
+.footer {
+  font-size: 8px;
+  left: 4px;
+  bottom: 0px;
+  margin-bottom: 0px;
+  position: fixed;
+}

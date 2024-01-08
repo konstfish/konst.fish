@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Exo');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  background-color: #2f3640;
+  font-family: 'Roboto' sans-serif;
+  background-image: url("../ball.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+table{
+
+  border: 1px solid #f5f6fa;
+}
+
+tr{
+  border: 0px solid #f5f6fa;
+}
+
+tr{
+  font: 22px 'Exo';
+  color: #f5f6fa;
+  border: 1px solid black;
+}
+
+th{
+  font: 24px 'Exo';
+  color: white;
+}
+
+h1{
+  font-family: 'Staatliches', cursive;
+  color: #f4f5fa;
+  letter-spacing: 5px;
+}
